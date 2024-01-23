@@ -4,15 +4,17 @@ import Arrow from "./arrow";
 function AboutSection() {
   return (
     <>
-      <div className="h-screen max-w-4xl mx-auto">
-        <div className="grid mt-24 grid-cols-3  ">
+      <div className="h-screen lg:max-w-4xl max-w-sm mx-auto">
+        <div className="grid mt-24 lg:grid-cols-3 grid-rows-2  ">
           <div className="col-span-2">
             <div className="flex my-2">
-              <div className="text-[#ccd6f6] text-2xl   ">
-                <span className="text-[#64ffda] font-spacemono">01.</span>
-                <span className="font-bold text-3xl"> About Me </span>
+              <div className="flex text-[#ccd6f6] text-2xl whitespace-nowrap items-center   ">
+                <div className="text-[#64ffda] font-spacemono lg:text-2xl text-lg">
+                  01.
+                </div>
+                <div className="font-bold lg:text-3xl text-xl"> About Me </div>
               </div>
-              <div className="h-[0.05rem] w-72 bg-[#7e89a6]  my-auto ml-5 opacity-25  "></div>
+              <div className="h-[0.05rem] lg:w-72 w-full bg-[#7e89a6]  my-auto ml-5 opacity-25  "></div>
             </div>
             <div className="max-w-lg">
               <p className="text-[#7e89a6] mt-12 font-semibold leading-relaxed ">
@@ -90,16 +92,12 @@ function AboutSection() {
             </div>
           </div>
 
-          <div className="flex col-span-1 mt-24 relative">
-            <div>
-              <Image
-                className="rounded-xl z-10 max-w-full object-cover -ml-5"
-                src="/siddharth.jpeg"
-                alt="Siddharth Kumar"
-                height={700}
-                width={700}
-              />
-            </div>
+          <div className="lg:mt-24 ">
+            <img
+              className="max-w-sm rounded mt-10 p-10 "
+              src="/siddharth.jpeg"
+              alt="Siddharth Kumar"
+            />
           </div>
         </div>
       </div>
